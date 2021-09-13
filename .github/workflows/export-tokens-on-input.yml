@@ -21,6 +21,4 @@ jobs:
         id: "auto-commit-action"
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          username: aqweider
-          email: attallah.qweider@gmail.com
           commit_message: Update design tokens
