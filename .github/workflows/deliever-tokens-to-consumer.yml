@@ -3,12 +3,12 @@ name: Deliver Tokens To Consumer
 on:
   push:
     paths:
-      - 'build/scss/**'
+      - 'build/scss/_variables.scss'
 
 jobs:
   # Add a job for every additional consumer/application
     deliver_to_react_application:
-      runs-on: macos-latest
+      runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
         - name: Deliver Platform Deliverable To Application
