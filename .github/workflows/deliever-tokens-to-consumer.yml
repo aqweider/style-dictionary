@@ -3,7 +3,7 @@ name: Deliver Tokens To Consumer
 on:
   push:
     paths:
-      - 'build/scss/**.scss'
+      - 'build/scss/_variables.scss'
 
 jobs:
   # Add a job for every additional consumer/application
