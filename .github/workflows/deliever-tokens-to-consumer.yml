@@ -15,6 +15,7 @@ jobs:
           uses: andstor/copycat-action@v3
           with:
             # See documentation: https://docs.github.com/en/actions/reference/encrypted-secrets
+            github_token: ${{ secrets.API_TOKEN_GITHUB}}
             # Set the secret in the "src" repository
             personal_token: ${{ secrets.API_TOKEN_GITHUB }}
             # This is the branch that has the code for this article
