@@ -2,8 +2,8 @@ name: Deliver Tokens To Consumer
 
 on:
   push:
-      paths-ignore:
-          - 'tokens/**'
+    paths:
+      - 'build/**'
 
 jobs:
   # Add a job for every additional consumer/application
